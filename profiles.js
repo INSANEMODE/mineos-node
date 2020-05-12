@@ -440,7 +440,7 @@ exports.profile_manifests = {
     } //end handler
   },
   waterfall: {
-    name: 'watterfall',
+    name: 'waterfall',
     request_args: {
       url: 'https://papermc.io/api/v1/waterfall',
       json: true
