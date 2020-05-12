@@ -1,5 +1,5 @@
 FROM debian:stretch
-MAINTAINER William Dizon <wdchromium@gmail.com>
+MAINTAINER Brandon Hammer <scottshome04@gmail.com>
 
 #update and accept all prompts
 RUN apt-get update && apt-get install -y \
@@ -25,7 +25,7 @@ RUN curl https://deb.nodesource.com/node_8.x/pool/main/n/nodejs/nodejs_8.9.4-1no
 #download mineos from github
 RUN mkdir /usr/games/minecraft \
   && cd /usr/games/minecraft \
-  && git clone --depth=1 https://github.com/hexparrot/mineos-node.git . \
+  && git clone --depth=1 https://github.com/INSANEMODE/mineos-node.git . \
   && cp mineos.conf /etc/mineos.conf \
   && chmod +x webui.js mineos_console.js service.js
 
