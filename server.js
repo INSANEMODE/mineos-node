@@ -728,7 +728,7 @@ function server_container(server_name, user_config, socket_io) {
       }
     });
 
-    var default_skips = ['world', 'world_the_end', 'world_nether', 'dynmap', 'plugins', 'web', 'region', 'playerdata', 'stats', 'data'];
+    var default_skips = ['/world', '/world_the_end', '/world_nether', '/dynmap', '/plugins', '/web', '/region', '/playerdata', '/stats', '/data'];
     for (var i in default_skips)
       if (skip_dirs.indexOf(default_skips[i]) == -1)
         skip_dirs.push(default_skips[i]);
