@@ -728,7 +728,8 @@ function server_container(server_name, user_config, socket_io) {
       }
     });
 
-    var default_skips = ['\S*?\/world\/?\S*', '\S*?\/world_the_end\/?\S*', '\S*?\/world_nether\/?\S*', '\S*?\/dynmap\/?\S*', '\S*?\/plugins\/?\S*', '\S*?\/web\/?\S*', '\S*?\/region\/?\S*', '\S*?\/playerdata\/?\S*', '\S*?\/stats\/?\S*', '\S*?\/data\/?\S*'];
+    var default_skips = ['**/world', '**/world_the_end', '**/world_nether', '**/dynmap', '**/plugins', '**/web', '**/region', '**/playerdata', '**/stats', '**/data'];
+//    var default_skips = ['\S*?\/world\/?\S*', '\S*?\/world_the_end\/?\S*', '\S*?\/world_nether\/?\S*', '\S*?\/dynmap\/?\S*', '\S*?\/plugins\/?\S*', '\S*?\/web\/?\S*', '\S*?\/region\/?\S*', '\S*?\/playerdata\/?\S*', '\S*?\/stats\/?\S*', '\S*?\/data\/?\S*'];
     for (var i in default_skips)
       if (skip_dirs.indexOf(default_skips[i]) == -1)
         skip_dirs.push(default_skips[i]);
